@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "@/components/HomePage.vue";
 import CreateMeetup from "@/components/MeetUp/CreateMeetup.vue";
 import MeetUps from "@/components/MeetUp/MeetUps.vue";
-import ExploreMeetup from "@/components/MeetUp/ExploreMeetup.vue";
+import MeetUp from "@/components/MeetUp/MeetUp.vue";
 import SignIn from "@/components/User/SignIn.vue";
 import SignUp from "@/components/User/SignUp.vue";
 import UserProfile from "@/components/User/UserProfile.vue";
@@ -33,7 +33,8 @@ const routes = [
   {
     path: '/meetup/:id',
     name: 'Explore MeetUp',
-    component: ExploreMeetup
+    props: true,
+    component: MeetUp
   },
   {
     path: "/sign-up",
